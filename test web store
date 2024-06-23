@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/bef7c285e2.js" crossorigin="anonymous"></script>
+
+    
+    <title>Bootstrap demo</title>
+    <link href="b.style.css" rel="stylesheet" >
+  </head>
+  <body>
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">HLOPUSHKA</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 top-menu">
+           
+            <li class="nav-item">
+              <a class="nav-link" href="#">Каталог</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Контакти</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Доставка і оплата</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Відгуки</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"><i class="far fa-circle-user fa-xl"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Реєстрація</a></li>
+                  <li><a class="dropdown-item" href="#">Авторізація</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"data-bs-toggle="modal" data-bs-target="#modal-cart"><i class="fas fa-cart-shopping"></i></a>
+                  
+              <div class="modal fade" id="modal-cart" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-Xl">
+                      <div class="modal-content">
+                        <div class="modal-header bg-danger text-white">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Кошик</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <table class="table">
+                            <tbody>
+                              <tr>
+                                <td><img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Black_Bralette.jpg" alt=""></td>
+                                <td><a href="#">Чорний топ</a></td>
+                                <td>500 гривень</td>
+                                <td>1</td>
+                              </tr>
+
+                              <tr>
+                                <td><img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Lace_bodysuit_with_bra_underneath_-_modelled_by_Anastasia_Voloshina.jpg" alt=""></td>
+                                <td><a href="#">Чорний боді</a></td>
+                                <td>800 гривень</td>
+                                <td>1</td>
+                              </tr>
+
+                              <tr>
+                                <td><img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/%D0%A1%D1%82%D1%80%D0%B8%D0%BF%D1%8B_%D0%B5%D0%B4%D0%B8%D0%BD%D0%B8%D1%86%D1%8B_High_Heels.jpg" alt=""></td>
+                                <td><a href="#">Чорні хілси</a></td>
+                                <td>1200 гривень</td>
+                                <td>1</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+
+            </li>
+            
+           
+          </ul>
+         
+        </div>
+      </div>
+    </nav>
+
+   <div class="container-fluid my-carousel" >
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://i.pinimg.com/originals/aa/0c/68/aa0c6813a6e56f05b66b6276b373cc50.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.pinimg.com/originals/ee/d0/06/eed006aa4947ef4e350caf4084e9890d.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://2.bp.blogspot.com/-KTvuAStjIB0/T23fTgjQXjI/AAAAAAAAAlo/cFxPBdY52Os/s1600/5805_P_1318946730406.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.pinimg.com/originals/76/85/be/7685be47906cd81100ea519cb81fc884.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+
+  <section class="main-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-sm-6 mb-4"> 
+          <div class="product-card">
+              <div class="card" style="width: auto; height: 52rem;">
+                <img src="https://i.pinimg.com/originals/cf/3d/22/cf3d228d6c1a2f6b81425904ae093c42.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4> <a href="#">Чорний топ</a></h4>
+                  <p class="card-text">Зручний та легкий, хоч на кожен день.</p>
+                  <div class="product-bottom-details d-flex justify-content-between">
+                    <div class="product-price">
+                      <small>$100</small> <h3>$99</h3> 
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-primary">У кошик</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="col-lg-4 col-sm-6 mb-4"> 
+          <div class="product-card">
+              <div class="card" style="width: auto; height: 52rem">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Lace_bodysuit_with_bra_underneath_-_modelled_by_Anastasia_Voloshina.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4> <a href="#">чорний боді</a></h4>
+                  <p class="card-text">Щоб шкіра дихала.</p>
+                  <div class="product-bottom-details d-flex justify-content-between">
+                    <div class="product-price">
+                      <small>$100</small> <h3>$99</h3> 
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-primary">У кошик</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="col-lg-4 col-sm-6 mb-4"> 
+          <div class="product-card">
+              <div class="card" style="width: auto; height: 52rem">
+                <img src="https://i.pinimg.com/564x/02/a9/d9/02a9d98830a4eef4d69ec56171fd0d9c.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4> <a href="D:/Перші кроки в IT/test bootstrap/card.html">Хілси спіраль</a></h4>
+                  <p class="card-text">Для тих хто знає чого хоче.</p>
+                  <div class="product-bottom-details d-flex justify-content-between">
+                    <div class="product-price">
+                      <small>$100</small> <h3>$99</h3> 
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-primary">У кошик</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="col-lg-4 col-sm-6 mb-4"> 
+          <div class="product-card">
+              <div class="card" style="width: auto; height: 52rem">
+                <img src="https://i.pinimg.com/originals/a5/be/ab/a5beab36993e1eeff953c485ac5327fe.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4> <a href="#">Хілси з незвичайним каблуком</a></h4>
+                  <p class="card-text">Для тих хто знає чого хоче.</p>
+                  <div class="product-bottom-details d-flex justify-content-between">
+                    <div class="product-price">
+                      <small>$100</small> <h3>$99</h3> 
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-primary">У кошик</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="col-lg-4 col-sm-6 mb-4"> 
+          <div class="product-card">
+              <div class="card" style="width: auto; height: 52rem">
+                <img src="https://i.pinimg.com/originals/19/03/2d/19032d8f3f3c055b8f2755d9d86ce5ae.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4> <a href="#">Хілси NIKE</a></h4>
+                  <p class="card-text">Для тих, хто хоче виділятись.</p>
+                  <div class="product-bottom-details d-flex justify-content-between">
+                    <div class="product-price">
+                      <small>$100</small> <h3>$99</h3> 
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-primary">У кошик</a>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+        <div class="col-lg-4 col-sm-6 mb-4"> 
+          <div class="product-card">
+              <div class="card" style="width: auto; height: 52rem;">
+                <img src="https://i.pinimg.com/originals/4d/a5/95/4da595a9c3f06b14de6033069b415ccc.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4> <a href="#">Костюм леопарда</a></h4>
+                  <p class="card-text">Костюм для хижих і впевнених.</p>
+                  <div class="product-bottom-details d-flex justify-content-between">
+                    <div class="product-price">
+                      <small>$100</small> <h3>$99</h3> 
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-primary">У кошик</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  
+
+  
+              
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-6">
+          <h4>Час і місце роботи</h4>
+          <ul class="list-unstyled">
+            <li>м. Киів</li>
+            <li>з понеділка по п'ятницю: 9:00 - 18:00</li>
+            <li>без перерви</li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-6">
+          <h4>Контакти</h4>
+          <ul class="list-unstyled">
+            <li><a href="tel:0664735868">066-473-58-68</a></li>
+            <li><a href="tel:0683561361">068-356-13-61</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-6">
+          <h4>Ми в мережі</h4>
+          <div class="footer-icons">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
