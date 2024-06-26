@@ -290,3 +290,114 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
+
+
+
+css
+  body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    background-color: #eca1df;
+    color:#000;
+    min-width: 320px;
+  }
+
+ img {
+    max-width: 100%;
+    height: auto;
+ }
+
+ section {
+  padding: 50px 0;
+ }
+
+ a {
+  color: #111;
+ }
+
+ a:hover {
+  color: #eb3030;
+ }
+
+ /* Header */
+
+ .navbar-brand {
+  color: deeppink;
+ }
+
+ .navbar-expand-lg .navbar-nav .nav-link {
+  font-weight: 500;
+  text-transform: uppercase;
+ }
+
+ .navbar-nav .dropdown-menu {
+  right: 0;
+  left: auto;
+ }
+
+ .navbar-nav li a::after {
+  content: '';
+  display: block;
+  width: 100%;
+  background-color: #111;
+  height: 1px;
+  transition: all .3s;
+  transform: scale(0);
+ }
+
+  .navbar-nav li a:hover::after {
+    transform: scale(1);
+  } 
+
+  .modal-body img {
+    max-width: 100px;
+  }
+
+  .my-carousel {
+    padding: 0;
+  }
+
+  .my-carousel .carousel-item {
+    display: flex;
+    max-height: 600px; 
+  }
+  .my-carousel .carousel-item img {
+    object-fit: cover;
+  }
+  
+ 
+ /* Header */
+
+ .product-card {
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.06);
+  transition: all .3s;
+  border: 20px;
+ }
+ 
+
+ .product-card:hover {
+  box-shadow: 0 20px 50px -15px rgba(0, 0, 0, 0.75);
+ }
+
+ .product-price {
+  color: red;
+ }
+
+ .product-price small {
+  color: #000;
+  text-decoration: line-through;
+ }
+
+ footer {
+  background-color: #d768c5;
+
+ }
+
+ footer h4 {
+  color:rgb(126, 18, 108);
+  text-transform: uppercase;
+  font-size: 16px;
+  border-bottom: 1px solid #666;
+  padding-bottom: 3px;
+ }
